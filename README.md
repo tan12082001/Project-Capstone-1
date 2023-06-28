@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://tan12082001.github.io/Project-Capstone-1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,7 +62,7 @@
 
 ## Walkthrough <a name="walkthrough"></a>
 
-- [Loom Video]()
+- [Loom Video](https://www.loom.com/share/fe93f7c4768a485f88285b6e18e3d169?sid=63fb5738-b9ad-4c3a-a820-357fae3e9e85)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +147,9 @@ If you like this project give a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+I would like to thank [@CindyShin](https://www.behance.net/adagio07) for the original Template of the webpage.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
