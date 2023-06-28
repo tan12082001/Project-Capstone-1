@@ -334,7 +334,11 @@ footer {
 
 .footer-img {
   width: 100%;
-  height: 80%;
+  height: 65%;
+}
+
+.deskaboutfooter {
+  display: none;
 }
 
 .footer-content {
@@ -367,7 +371,7 @@ footer {
     width: 100%;
     height: 100%;
   }
-  
+
   .header-bar {
     width: 100%;
     position: absolute;
@@ -421,7 +425,7 @@ footer {
     text-decoration: none;
     color: #000;
   }
-  
+
   .tour-button {
     display: flex;
     align-items: center;
@@ -476,20 +480,19 @@ footer {
     font-weight: 800;
     margin-bottom: 20px;
   }
-  
+
   .logo-div-heading {
     padding: 65px 20%;
     gap: 24px;
   }
-  
+
   .logo-heading {
     font-size: 30px;
     line-height: 28px;
   }
-  
+
   .logo-div-para {
     display: block;
-    font-family: Lato;
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
@@ -515,7 +518,7 @@ footer {
     font-weight: 700;
     line-height: 28px;
   }
-  
+
   .news-heading-paragraph {
     font-size: 16px;
     font-weight: 700;
@@ -528,16 +531,25 @@ footer {
     padding: 50px 50px;
     margin: 0 auto;
   }
-  
+
   .partners-section {
     display: none;
   }
-  
+
   footer {
-    grid-template-columns: 30% 70%;
-    padding: 54px 10%;
+    grid-template-columns: 30% 64%;
+    padding: 54px 20%;
     height: 245px;
     background: #2e2e2e;
+    gap: 24px;
+  }
+
+  .mobileaboutfooter {
+    display: none;
+  }
+
+  .deskaboutfooter {
+    display: flex;
   }
 
   .footer-content {
