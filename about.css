@@ -17,7 +17,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: var(--main-font-family);
-  color: #333;
+  color: var(--blue-shade-color);
 }
 
 .wrapper {
@@ -46,6 +46,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  justify-content: center;
+  align-items: center;
 }
 
 .with-hamburger {
@@ -54,16 +56,9 @@ main {
   justify-content: space-between;
 }
 
-.mobile-logo {
-  width: 150px;
-  height: 51px;
-  margin-right: 10px;
-}
-
 .menu-button {
   width: 40px;
   height: 40px;
-  color: var(--blue-shade-color);
   display: flex;
   border: none;
   background: none;
@@ -85,20 +80,21 @@ main {
 .bar2,
 .bar3 {
   width: 100%;
-  height: 3px;
-  margin: 5px 0 3px 0;
-  background: var(--blue-shade-color);
-  border-radius: 6px;
+  height: 7px;
+  margin: 3px 0 3px 0;
+  background: #565656;
 }
 
 .action-slide .bar1 {
   transform: rotate(-45deg) translate(-3px, 14px);
   background: var(--orange-shade-color);
+  height: 3px;
 }
 
 .action-slide .bar3 {
   transform: rotate(45deg) translate(0, -12px);
   background: var(--orange-shade-color);
+  height: 3px;
 }
 
 .action-slide .bar2 {
@@ -149,61 +145,79 @@ main {
 }
 
 .head-section {
-  background: url('./media/backgrounds/aboutMobileBackground\ \(3\).png') no-repeat top;
+  background: url('./media/backgrounds/aboutMobileBackground\ \(5\).png') no-repeat top;
   text-align: center;
-  padding-top: 51px;
-  width: 90%;
-  margin: 0 auto;
+  padding: 124px 14px 20px;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 .headline-h2 {
   color: var(--orange-shade-color);
+  font-weight: 400;
 }
 
 .headline-h1 {
-  font-size: 42px;
+  font-size: 32px;
   color: var(--orange-shade-color);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .tagline-div {
   margin: 17px 0.75em 0 0.75em;
-  width: calc(100% - 2.5em);
   padding: 1em 0.5em;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
   height: auto;
-  text-align: justify;
+  text-align: center;
   background-color: #fff;
-  line-height: 150%;
+  line-height: 24px;
+  border: 1px solid var(--gray-shade-color);
 }
 
 .headline-info {
   text-align: center;
-  font-size: 1.125em;
   margin: 0;
   padding-top: 40px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
   background: #f7f7f8;
+  color: #565656;
+  width: 80%;
 }
 
 .headline-tag {
-  font-size: 0.8em;
-  font-weight: 400;
+  font-size: 0.68em;
+  font-weight: 700;
   margin-bottom: 10px;
+  line-height: 21px;
 }
 
 .headline-email {
   font-size: 0.8em;
-  color: #000;
   font-weight: bold;
+}
+
+.headline-info a:link,
+.headline-info a:visited,
+.headline-info a:active {
+  color: #565656;
 }
 
 .logo-div-heading {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 }
 
 .logo-heading {
@@ -228,13 +242,20 @@ main {
 .logo-div-img {
   width: 100%;
   height: 140px;
-  padding: 30px 40px;
+  padding: 30px 60px;
+  border: 1px solid #ececec;
 }
 
 .news-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-top: 30px;
+}
+
+.news-section-hr {
+  width: 100%;
+  border: 1px solid #ececec;
 }
 
 .news-heading {
@@ -313,16 +334,18 @@ footer {
 }
 
 .mobile-nav,
-.mobile-logo-img,
-.logo-display-section,
-.news-section,
-.headline-info,
 .news-one-inside,
 .partners-section,
 .partners,
 .partner-div img,
 .footer {
   width: 100%;
+  height: 100%;
+}
+
+.logo-display-section,
+.news-section {
+  width: 90%;
   height: 100%;
 }
 
@@ -334,7 +357,7 @@ footer {
 
 .footer-img {
   width: 100%;
-  height: 65%;
+  height: auto;
 }
 
 .deskaboutfooter {
@@ -387,7 +410,7 @@ footer {
     gap: 24px;
     list-style: none;
     color: #fff;
-    margin: 6px;
+    margin: 6px 17%;
   }
 
   .with-logo-list {
@@ -449,6 +472,13 @@ footer {
     width: 100%;
     padding: 110px 100px 0;
     background: url('./media/backgrounds/aboutDesktopBackground\ \(1\).png') no-repeat;
+    margin-top: 0;
+    background-size: cover;
+    gap: 32px;
+  }
+
+  .headline-h1 {
+    font-size: 36px;
   }
 
   .headline-tagline {
@@ -483,12 +513,16 @@ footer {
 
   .logo-div-heading {
     padding: 65px 20%;
-    gap: 24px;
+    gap: 34px;
   }
 
   .logo-heading {
     font-size: 30px;
     line-height: 28px;
+  }
+
+  .logo-div-para-mobile {
+    display: none;
   }
 
   .logo-div-para {
@@ -510,7 +544,6 @@ footer {
   .news-section {
     margin-top: 20px;
     padding: 85px 65px 75px 65px;
-    border-top: 2px solid #ececec;
   }
 
   .news-heading-h4 {
